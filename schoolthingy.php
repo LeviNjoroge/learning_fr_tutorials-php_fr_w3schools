@@ -15,5 +15,10 @@
 </html>
 
 <?php 
-    $reg
+    $regno = $_POST["regno"];
+    $name = $_POST["name"];
+    $school[$regno] = $name;
+    foreach ($school as $key => $value) {
+        echo "$key: $value <br>";
+    }
 ?>
